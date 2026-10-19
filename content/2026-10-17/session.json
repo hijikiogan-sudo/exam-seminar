@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-17",
+  "status": "reviewed",
+  "themes": {
+    "japanese": "小説文の心情・比喩・記述",
+    "english": "受動態・群動詞・前置詞",
+    "social": "鉱産資源・発電・工業と交通",
+    "math": "動く図形・重なりの面積と関数",
+    "science": "運動のグラフ・慣性・作用反作用"
+  },
+  "review": {
+    "privacy": true,
+    "content": true,
+    "math_variants_distinct": true,
+    "basis": "2026年10月17日の講義動画の音声と板書を照合して作成。自動音声認識の誤認識は板書で補正。数学の元図の細部は講義資料で再確認し、本文では確認できた式・条件を明示した再構成問題として扱っています。",
+    "sha256": {
+      "japanese.html": "be13bfacf15f244f9d438608830d33797b422627df00bd3522bcfed28675387c",
+      "english.html": "8ebdb86db25595ba10a061bbbd5c8a4227f1faaf10b54eef7279c1fb3df1cea1",
+      "social.html": "b12b08154fd80d46fdd732c0dac046a5eb627d8b3fbfbc9c233c5119e7e4cb66",
+      "math-summary.html": "0373ff692dc42faf9b965dd086fd3d0112ed28cf75497158c8964a9724106c92",
+      "math-practice.html": "3c5d6a3112f1e115071faaa97fac00e5db26113f971dea85697bf4332a0d09f2",
+      "science.html": "254bd9b814fa65f9dfb3c0dd1da55e57b3a4db3d81a77f25fbf0d54440b4ea01"
+    }
+  },
+  "print_basis": "2026年10月17日の講義動画を確認して作成した復習ノート。講義内容の整理と、明示した補足例題を収録しています。",
+  "source_note": "元動画・講師映像・個人情報は掲載せず、講義の要点を自分で復習できる形に整理しています。補足例題はその旨を表示しています。"
+}

@@ -1,0 +1,28 @@
+<section><h2>実践1｜場合分けした面積と、R：S＝5：2</h2>
+<p class="label">講義の板書をもとに、式・面積条件を明示して再構成した問題</p>
+<p>講義はAB＝4cm、AD＝8cmの長方形ABCDを、動く折り目PQで折り返す問題。PはA→B→E、QはA→D→Fへ毎秒1cmで動き、PはEで、QはFで停止する。EはBCの中点、FはDCの中点。Pは8秒で止まり、Qは10秒で止まる。</p><p>出発後の時間をx秒（0 ≤ x ≤ 10）とする。Rは折り返した図形全体の面積、Sは元の長方形との重なり部分の面積（cm²）。RはSを含む。Rを折る前の位置へ戻して考えると、RとSを合わせた面積が求めやすい。Sと面積の和T＝R＋Sが次の表で与えられるとき、R：S＝5：2となるxをすべて求めよう。</p>
+<div class="table-wrap"><table><thead><tr><th>範囲</th><th>S</th><th>T＝R＋S</th></tr></thead><tbody>
+<tr><td>0 ≤ x ≤ 4</td><td>x²/2</td><td>x²</td></tr><tr><td>4 ≤ x ≤ 8</td><td>8</td><td>4x</td></tr><tr><td>8 ≤ x ≤ 10</td><td>−2x＋24</td><td>32</td></tr></tbody></table></div>
+<p class="muted">元図をそのまま再現した問題文ではない。講義の3場面と板書の式を、単独でも条件不足なく解ける形に整理している。</p>
+<h3>補足：Rの面積関数も確かめよう</h3><p>表からR＝T−S。3区間で順に、<strong>R＝x²/2、R＝4x−8、R＝2x＋8</strong>となる。Rの面積をyと置くなら、この式をそれぞれのxの範囲とセットで書く。</p><h3>着眼点</h3><p>Rを別々に求める前に、Sが全体Tの<strong>2/7</strong>であると置く。3区間すべてで調べ、区間外の値を取り除く。</p>
+<details><summary>途中式1：0 &lt; x ≤ 4の場合</summary><p>R＝x²−x²/2＝x²/2＝S。したがってR：S＝1：1であり、5：2にはならない。x＝0ではR＝S＝0となり、比が定義できないため最初から除く。</p></details>
+<details><summary>途中式2：4 ≤ x ≤ 8の場合</summary><div><p>S＝T×2/7より、</p><div class="formula">8＝4x×2/7<br>56＝8x<br>x＝7</div><p>7は4 ≤ x ≤ 8を満たすので採用する。</p></div></details>
+<details><summary>途中式3：8 ≤ x ≤ 10の場合</summary><div><div class="formula">−2x＋24＝32×2/7<br>−14x＋168＝64<br>14x＝104<br>x＝52/7</div><p>52/7 &lt; 8なので、この区間では不適。採用しない。</p></div></details>
+<div class="callout good"><strong>解答：x＝7</strong><br>検算：T＝28、S＝8、R＝20。20：8＝5：2で条件に合う。</div>
+<h3>別の確かめ方</h3><p>最後の区間ではT＝32だから、必要なSは64/7（約9.14）。しかしこの区間のSは4～8なので不可能。方程式を解く前にも除ける。</p>
+<h3>失点しやすい所</h3><ul><li>S＝全体×2/5としてしまう。全体に対しては2/7。</li><li>中央の区間だけ調べ、ほかの可能性を説明しない。</li><li>x＝52/7も答えに残す。各式の成立範囲を必ず確認する。</li></ul></section>
+<section><h2>類題1｜S＝6となるxをすべて求める</h2><p class="label">上の面積モデルを使う独自の補足問題</p>
+<p>同じSの式でS＝6になるxを求めよう。先にグラフを思い浮かべ、答えが何個ありそうか考える。</p>
+<details><summary>解答・途中式を見る</summary><div><ol><li>0 ≤ x ≤ 4：x²/2＝6からx²＝12。x ≥ 0なのでx＝2√3。0～4に入る。</li><li>4 ≤ x ≤ 8：Sは8なので解なし。</li><li>8 ≤ x ≤ 10：−2x＋24＝6からx＝9。範囲内。</li></ol><p><strong>解答：x＝2√3、9</strong>。二次方程式で−2√3が出ても、xの条件で除く。</p></div></details></section>
+<section><h2>実践2｜重なっていない面積が、重なりの8倍</h2>
+<p class="label">講義の板書の数値・式をもとに再構成した問題</p>
+<p>面積18cm²と32cm²の2枚の三角形を重ねる。共通部分は、直角をはさむ2辺がともにx cmの直角二等辺三角形。重なっていない部分の面積の合計が、共通部分の面積の8倍になるとき、xを求めよう。xは正で、図が成り立つ範囲を0 &lt; x ≤ 6とする。</p>
+<h3>着眼点：面積を色分けして数える</h3><p>共通部分をT、片方にだけ含まれる部分の合計をUとする。2枚の三角形の面積を足すと、共通部分を2回数えることに注意。</p>
+<div class="diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" role="img" aria-label="面積の合計50は、重ならない部分8Tと共通部分2回分の2Tに分かれる"><rect x="10" y="38" width="360" height="55" fill="#e8eafb" stroke="#4b55a0"/><rect x="370" y="38" width="90" height="55" fill="#ffedb7" stroke="#a77300"/><g fill="#182f4e" font-size="16" text-anchor="middle"><text x="190" y="72">重ならない部分 U＝8T</text><text x="415" y="72">2T</text><text x="235" y="125">18＋32＝50＝10T</text></g></svg></div>
+<details><summary>途中式と解答を見る</summary><div><div class="formula">T＝x²/2、U＝8T<br>18＋32＝U＋2T＝10T<br>50＝10×x²/2<br>5x²＝50<br>x²＝10<br>x＝±√10</div><p>x &gt; 0より、<strong>x＝√10 cm</strong>。√10は約3.16なので0 &lt; x ≤ 6も満たす。</p></div></details>
+<h3>解の吟味と検算</h3><p>T＝10/2＝5cm²。U＝50−2×5＝40cm²。40＝8×5なので条件に合う。重ねて見える領域の面積は50−5＝45cm²で、U＝40とは違う。</p>
+<h3>失点しやすい所</h3><ul><li>18＋32から共通部分を1回だけ引いてUにしてしまう。</li><li>「8倍だから全体は9倍」とする。2枚の面積の和なら10倍。</li><li>長さなのに−√10も答えに残す。</li></ul></section>
+<section><h2>類題2｜「何倍」が変わっても同じ考え方</h2><p class="label">独自の補足問題</p>
+<p>面積8cm²と18cm²の2枚を重ね、共通部分が直角二等辺三角形（直角をはさむ2辺がx cm、0 &lt; x ≤ 4）になった。重なっていない部分の合計が共通部分の11倍のとき、xを求めよう。</p>
+<details><summary>解答・途中式を見る</summary><div><div class="formula">8＋18＝(11＋2)T<br>26＝13T → T＝2<br>x²/2＝2 → x²＝4<br>x＝2</div><p><strong>解答：2cm</strong>。検算すると、重ならない部分は26−2×2＝22cm²で、共通部分2cm²の11倍。</p></div></details>
+</section>

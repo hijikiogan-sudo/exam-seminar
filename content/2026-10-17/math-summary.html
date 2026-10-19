@@ -1,0 +1,24 @@
+<section><h2>重なりの面積は、形が変わる所で場合分け</h2>
+<p class="lead">一つの図だけで最後まで考えない。講義は長方形を動く折り目PQで折り返す問題。移動に伴い「三角形の面積が増える → 面積が一定 → 三角形の面積が減る」という3つの区間に分けた。</p>
+<p>解く手がかりとして、先に講義でSとした重なり部分の面積を整理する。出発後の時間をx秒、Sの面積をS cm²とする。点PはA→B→E、点QはA→D→Fへ進み、それぞれE・Fで停止する。点P・Qが毎秒1cmで動くので、停止する前はx秒でx cm進む。板書では次の関係を確認できる。</p>
+<div class="table-wrap"><table><thead><tr><th>xの範囲</th><th>Sの式</th><th>グラフ</th></tr></thead><tbody>
+<tr><td>0 ≤ x ≤ 4</td><td>S＝x²/2</td><td>放物線の一部。直角二等辺三角形の面積。</td></tr><tr><td>4 ≤ x ≤ 8</td><td>S＝8</td><td>水平な直線。底辺4、高さ4の三角形。</td></tr><tr><td>8 ≤ x ≤ 10</td><td>S＝4(12−x)/2＝−2x＋24</td><td>右下がりの直線。</td></tr></tbody></table></div>
+<div class="diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" role="img" aria-label="Sは0から4まで二次関数で8まで増え、4から8までは8、8から10までは4まで直線で減る"><path d="M50 20V180H355" fill="none" stroke="#52647a" stroke-width="1.5"/><path d="M50 180 Q106 180 162 52 H274 L330 116" fill="none" stroke="#4b55a0" stroke-width="4"/><path d="M162 52V180 M274 52V180 M330 116V180 M50 52H274 M50 116H330" fill="none" stroke="#bccddd" stroke-dasharray="4 4"/><g fill="#182f4e" font-size="14"><text x="28" y="198">0</text><text x="156" y="201">4</text><text x="268" y="201">8</text><text x="321" y="201">10</text><text x="29" y="57">8</text><text x="29" y="121">4</text><text x="357" y="185">x</text><text x="27" y="25">S</text><text x="70" y="226">増える（二次） → 一定 → 減る（一次）</text></g></svg></div>
+<div class="callout warn">元の動き・点名の細部は講義の問題用紙と照合しよう。このノートの実践版では、板書で確認できた式と必要な面積条件を明示して、解き直せる問題に再構成している。</div>
+<details><summary>確認1：x＝4とx＝8で、前後の式はつながる？</summary><p>x＝4では4²/2＝8。x＝8では−2×8＋24＝8。どちらも一定区間のS＝8と一致する。境目で式がつながるかは、場合分けの検算になる。</p></details></section>
+<section><h2>補足：Rの面積yも式にする</h2>
+<p>R＋Sになる面積は、最初はx²、中央は4x、最後は長方形全体の32。そこからSを引くと、Rの面積yも計算できる。</p>
+<div class="table-wrap"><table><thead><tr><th>範囲</th><th>Rの面積 y</th></tr></thead><tbody><tr><td>0 ≤ x ≤ 4</td><td>y＝x²−x²/2＝x²/2</td></tr><tr><td>4 ≤ x ≤ 8</td><td>y＝4x−8</td></tr><tr><td>8 ≤ x ≤ 10</td><td>y＝32−(−2x＋24)＝2x＋8</td></tr></tbody></table></div>
+<p>x＝4ではy＝8、x＝8ではy＝24。境目で前後の値が一致する。SのグラフとRのグラフを取り違えないよう、縦軸に何の面積か書こう。</p>
+<details><summary>確認：x＝9秒のとき、RとSの面積は？</summary><p>S＝−2×9＋24＝6cm²。Rの面積y＝2×9＋8＝26cm²。合計32cm²で長方形全体の面積に一致する。</p></details></section>
+<section><h2>面積の比は「全体の何分のいくつ」へ</h2>
+<div class="formula">R：S＝5：2 なら、S＝(R＋S)×2/7</div>
+<p>SをRの2/5として使う方法もあるが、R＋Sの面積が簡単なら、全体の2/7にする方が短い。<strong>分母は5＋2＝7</strong>。</p>
+<p>講義では中央の区間でR＋S＝4x、S＝8を使い、4x×2/7＝8からx＝7を求めた。出てきた値が<strong>4 ≤ x ≤ 8</strong>に入ることまで確かめる。</p>
+<details><summary>確認2：別の区間の式からx＝52/7が出た。8 ≤ x ≤ 10の解にできる？</summary><p>できない。52/7は約7.43で8未満。計算が合っていても、その式を立てた区間の条件に合わなければ除く。</p></details></section>
+<section><h2>「重ならない部分」は、重なりを2回引く</h2>
+<p>2枚の図形の面積を足すと、共通部分は2回数えられる。共通部分をT、2枚のうち片方にだけ含まれる部分の合計をUとする。</p>
+<div class="formula">2枚の面積の合計 ＝ U ＋ 2T<br>U＝kT なら、2枚の面積の合計＝(k＋2)T</div>
+<p>講義の例では18＋32＝50。「重ならない部分が重なる部分の8倍」なので、50＝(8＋2)T＝10T。T＝x²/2を代入すれば5x²＝50となる。</p>
+<details><summary>確認3：「重ならない部分が重なる部分の8倍」なら、面積の合計は9倍？10倍？</summary><p><strong>10倍</strong>。8倍の部分と、重なり2回分を合わせるため。紙全体の和と、2枚を重ねて見える領域の面積を混同しない。</p></details>
+<div class="callout good"><strong>解く前の3行メモ</strong><br>①どこで形が変わるか　②全体は何の面積か　③答えを戻す範囲はどこか。実践版で途中式と類題まで確認しよう。</div></section>

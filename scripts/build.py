@@ -65,7 +65,8 @@ def build(out):
   d=meta['date'];shown=d.replace('-','/');themes=meta['themes']
   topics='<dl class="topics">'+''.join('<div><dt>'+name+'</dt><dd>'+escape(themes[key])+'</dd></div>' for key,name in SUBJECTS.items())+'</dl>'
   home+='<li class="session-item" data-session><time datetime="'+d+'">'+shown+'<br><span class="weekday">土曜日の授業</span></time>'+topics+'<a class="button" href="sessions/'+d+'.html">復習を開く</a></li>'
-  body=brand('../')+'<main class="shell" id="main"><nav class="breadcrumb" aria-label="現在位置"><a href="../">授業の記録</a> / '+shown+'</nav><header class="session-header"><h1>'+shown+' の復習ノート</h1><p>教科を選んで復習しよう。数学は要点と実践の2つに分かれています。</p><div class="tools"><a class="button" href="../pdf/'+d+'.pdf">印刷用PDFを開く</a><button type="button" class="button secondary" data-print>このページを印刷</button><a class="button secondary" href="../downloads/'+d+'.zip">まとめて保存</a></div></header><section class="print-cover"><p>入試実戦オンラインゼミ</p><h1>'+shown+'<br>5教科 復習ノート</h1><h2>この回の内容</h2><ul>'+''.join('<li>'+name+'：'+escape(themes[key])+'</li>' for key,name in SUBJECTS.items())+'</ul><p>数学は「要点整理」「実践問題詳細」をそれぞれ収録。<br>確認問題は解答も掲載しています。</p><p class="notice">A4縦・カラー・両面（長辺とじ）向け。<br>既存の復習資料から移行したサイト版です。元動画は今回再確認していません。</p></section><nav class="subject-nav" aria-label="教科を選ぶ">'
+  print_basis=meta.get('print_basis','既存の復習資料から移行したサイト版です。元動画は今回再確認していません。')
+  body=brand('../')+'<main class="shell" id="main"><nav class="breadcrumb" aria-label="現在位置"><a href="../">授業の記録</a> / '+shown+'</nav><header class="session-header"><h1>'+shown+' の復習ノート</h1><p>教科を選んで復習しよう。数学は要点と実践の2つに分かれています。</p><div class="tools"><a class="button" href="../pdf/'+d+'.pdf">印刷用PDFを開く</a><button type="button" class="button secondary" data-print>このページを印刷</button><a class="button secondary" href="../downloads/'+d+'.zip">まとめて保存</a></div></header><section class="print-cover"><p>入試実戦オンラインゼミ</p><h1>'+shown+'<br>5教科 復習ノート</h1><h2>この回の内容</h2><ul>'+''.join('<li>'+name+'：'+escape(themes[key])+'</li>' for key,name in SUBJECTS.items())+'</ul><p>数学は「要点整理」「実践問題詳細」をそれぞれ収録。<br>確認問題は解答も掲載しています。</p><p class="notice">A4縦・カラー・両面（長辺とじ）向け。<br>'+escape(print_basis)+'</p></section><nav class="subject-nav" aria-label="教科を選ぶ">'
   for key,name in SUBJECTS.items():body+='<a href="#'+key+'" data-subject-link="'+key+'" style="--tone:'+TONES[key]+'">'+name+'</a>'
   body+='</nav>'
   for key,name in SUBJECTS.items():
@@ -75,7 +76,7 @@ def build(out):
     for variant,label in [('summary','要点整理'),('practice','実践問題詳細')]:body+='<section class="variant-panel" data-variant="'+variant+'"><h3 class="variant-title">数学 '+label+'</h3><div class="print-subject-label">数学 '+label+'</div><div class="lesson">'+parts['math-'+variant+'.html']+'</div></section>'
    else:body+='<div class="print-subject-label">'+name+'</div><div class="lesson">'+parts[key+'.html']+'</div>'
    body+='</section>'
-  body+='<aside class="source-note">'+escape(meta['review']['basis'])+'<br>講義そのものの転載ではなく、既存の復習資料をまとめたノートです。</aside></main>'+footer()
+  body+='<aside class="source-note">'+escape(meta['review']['basis'])+'<br>'+escape(meta.get('source_note','講義そのものの転載ではなく、既存の復習資料をまとめたノートです。'))+'</aside></main>'+footer()
   (out/'sessions'/f'{d}.html').write_text(document(d+' 入試実戦オンラインゼミ',body,css,js,d))
  home+='</ul><p class="no-results" data-no-results hidden>一致する授業がありません。短い単元名でもう一度探してみよう。</p><aside class="usage"><h2>復習の進め方</h2><ol><li>要点を読んで、授業のテーマを思い出す。</li><li>確認問題を解く。答えは問題を押すと開きます。</li><li>数学は「要点整理」の後に「実践問題詳細」へ進む。</li></ol></aside></main>'+footer()
  (out/'index.html').write_text(document('入試実戦オンラインゼミ｜復習ノート',home,css,js))
