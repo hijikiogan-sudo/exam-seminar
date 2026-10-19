@@ -1,0 +1,9 @@
+_site*/
+node_modules/
+private/
+.env*
+*.local.json
+__pycache__/
+*.pyc
+test-results/
+artifacts/
