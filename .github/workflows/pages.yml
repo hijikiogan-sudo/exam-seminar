@@ -26,6 +26,8 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: Install Japanese print fonts
         run: sudo apt-get install -y fonts-noto-cjk
+      - name: Install reference print dependencies
+        run: python3 -m pip install -r requirements-print.txt
       - name: Validate reviewed content and build HTML
         run: |
           python3 -m unittest discover -s tests

@@ -2,6 +2,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {pathToFileURL} = require('node:url');
 const {chromium} = require('playwright');
+const referenceDates = require('../assets/print-layouts.json')['reference-v1'];
+const renderReference = require('./render-reference-print.cjs');
 
 (async () => {
   const root = path.resolve(process.argv[2] || '_site');
@@ -10,6 +12,11 @@ const {chromium} = require('playwright');
   const browser = await chromium.launch({headless:true, ...(process.env.CHROMIUM_PATH ? {executablePath:process.env.CHROMIUM_PATH} : {})});
   try {
     for (const {date} of sessions) {
+      if(referenceDates.includes(date)){
+        await renderReference(browser,root,date);
+        console.log('PDF生成（承認済み統一レイアウト）:',date);
+        continue;
+      }
       const page = await browser.newPage();
       await page.goto(pathToFileURL(path.join(root,'sessions',date+'.html')).href);
       await page.evaluate(() => { document.querySelectorAll('[hidden]').forEach(x=>x.hidden=false); document.querySelectorAll('details').forEach(x=>x.open=true); });
