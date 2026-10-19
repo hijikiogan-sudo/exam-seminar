@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-26",
+  "status": "reviewed",
+  "themes": {
+    "japanese": "小説文の場面と表現",
+    "english": "不定詞",
+    "social": "緯度・経度と世界地図",
+    "math": "二次方程式・動く図形・回転体",
+    "science": "中和・化学電池"
+  },
+  "review": {
+    "privacy": true,
+    "content": true,
+    "math_variants_distinct": true,
+    "basis": "既存の復習HTMLから移行。元動画は今回再確認していません。明確な誤記を修正し、不明点の注記を維持。",
+    "sha256": {
+      "english.html": "e94e9010033b338fd9f1e0b5edeb8302cba433c577f7d35e4968c0cccac09ecd",
+      "japanese.html": "00f35513fd75f17518991e6a3202500f2aaa1ea3f2e7d83d8d46a2d8fd9af6b2",
+      "math-practice.html": "4c976af979fd7d3665316af807acb52b24af8e181dd856ca47e0e7f2ba7b5903",
+      "math-summary.html": "6f04f02ba3ba4d183db7a45e7ae9698b7349607469af4713b466ed58d26597b8",
+      "science.html": "f00127162b65daa2d454fd81e5c5e4426b0d097cc9f51613484b521699d74a6d",
+      "social.html": "eaf6b80dc95afd00a26008e43743b18aea1885c10fac17fbde266955d8664db4"
+    }
+  }
+}

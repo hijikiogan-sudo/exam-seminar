@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-03",
+  "status": "reviewed",
+  "themes": {
+    "japanese": "古文の語句・主語・係り結び",
+    "english": "動詞の語法・SVOC・使役動詞",
+    "social": "憲法の比較と司法制度",
+    "math": "図形の文章題・面積比",
+    "science": "細胞分裂・生殖・遺伝・進化"
+  },
+  "review": {
+    "privacy": true,
+    "content": true,
+    "math_variants_distinct": true,
+    "basis": "既存の復習HTMLから移行。元動画は今回再確認していません。明確な誤記を修正し、不明点の注記を維持。",
+    "sha256": {
+      "english.html": "5e8c786bea860e71535e9b1ea7646d34e325723ce40d704bb83134a61c8ee685",
+      "japanese.html": "9c731f60e22aa2e04313f344bd99ba7eee2886cba00a23cccfa69354c3b77d3b",
+      "math-practice.html": "a02eed7da57f63e98bd2e6df6353e836b5be14b2347c04491b8cb0b069978e11",
+      "math-summary.html": "2aca85693258732b7357559893f72a88f7dc04e373f67852ddcc141d2dc2c783",
+      "science.html": "d92b5b86791144a84ba14b69af2fa61906bde14b628468a1de8ad9a3c4e7bf7c",
+      "social.html": "b3b28d1ee623aa30abef5460e242100b25b86a07f7cb510d89ce051672027d1f"
+    }
+  }
+}

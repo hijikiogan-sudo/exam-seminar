@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-19",
+  "status": "reviewed",
+  "themes": {
+    "japanese": "論説文の読み方",
+    "english": "名詞の数・可算性、SVOC",
+    "social": "幕末から明治維新",
+    "math": "平行線・補助線・合同証明",
+    "science": "イオン・電離・中和"
+  },
+  "review": {
+    "privacy": true,
+    "content": true,
+    "math_variants_distinct": true,
+    "basis": "既存の復習HTMLから移行。元動画は今回再確認していません。明確な誤記を修正し、不明点の注記を維持。",
+    "sha256": {
+      "english.html": "cc5abff2b676ccaeab83864400f73a6549e01cd8af4cb5195718c519bab2c71b",
+      "japanese.html": "96e5249f0e80f50a181c46242bc49d910f2304e658455cfd99c58cc30a45e3d0",
+      "math-practice.html": "8970e9512aa7cbfbd10d882024a24c89d26781707917735e0652efb499b1b903",
+      "math-summary.html": "532745a64fc4d2dd90e813e198d6a9849c0e230438c5428b708fb01d38608e9b",
+      "science.html": "751ecd9d73a77087eef985f930c334dc0a09955f82684020bfeff6a0411d525c",
+      "social.html": "63cef0fdc454ab634be550694ac6a7e89fc49d10443a2b2cdeea727d7394191a"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "exam-seminar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "入試実戦オンラインゼミの閲覧サイト",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "pdf": "node scripts/render-pdf.cjs",
+    "verify": "node scripts/verify.cjs"
+  },
+  "devDependencies": {"playwright": "1.62.1"}
+}
