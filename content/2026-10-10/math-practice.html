@@ -1,0 +1,32 @@
+<section><h2>実践1｜等しい面積から、中点と座標を求める</h2>
+<p class="label">講義の板書の関係をもとに、条件を明示して再構成した問題</p>
+<p>放物線y＝x²上にA(−4,16)がある。x軸の正の部分にQを取り、線分AQと放物線とのもう一つの交点をPとする。Pのx座標は正とする。原点をOとし、△OPAと△OPQの面積が等しいとき、PとQの座標を求めよう。</p>
+<div class="diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 300" role="img" aria-label="放物線y=xの二乗上にAとPがあり、A P Qは一直線。PがAQの中点なら、OAPとOPQの面積が等しい"><path d="M35 260H390 M120 285V15" stroke="#52647a" fill="none"/><path d="M64 36Q120 484 176 36" stroke="#4b55a0" fill="none" stroke-width="2.5"/><path d="M120 260L64 36L160 148Z" fill="#dfe6fa" stroke="#4b55a0"/><path d="M120 260L160 148L256 260Z" fill="#ffefbf" stroke="#a37815"/><path d="M64 36L256 260" stroke="#182f4e" fill="none" stroke-width="2"/><g fill="#182f4e" font-size="14"><text x="105" y="280">O</text><text x="10" y="25">A(−4,16)</text><text x="170" y="143">P(2√2,8)</text><text x="250" y="282">Q(4＋4√2,0)</text><text x="185" y="42">y＝x²</text><text x="394" y="265">x</text><text x="108" y="12">y</text></g></svg></div>
+<h3>着眼点</h3><p>△OPAと△OPQでは、底辺をAP・PQと見れば、Oから直線AQまでの高さが共通。面積を計算する前に<strong>AP＝PQ</strong>と分かる。</p>
+<details><summary>途中式1：Pのy座標を決める</summary><p>面積が等しいのでPはAQの中点。Aのy座標は16、Qはx軸上なので0。したがってPのy座標は(16＋0)÷2＝<strong>8</strong>。</p></details>
+<details><summary>途中式2：Pのx座標を決める</summary><div><p>Pはy＝x²上なので、</p><div class="formula">x²＝8<br>x＝±2√2</div><p>Pのx座標は正だから、<strong>P(2√2,8)</strong>。</p></div></details>
+<details><summary>途中式3：Qのx座標を求める</summary><div><p>Qのx座標をqとする。Pは中点なので、</p><div class="formula">(−4＋q)/2＝2√2<br>−4＋q＝4√2<br>q＝4＋4√2</div><p><strong>Q(4＋4√2,0)</strong>。P・Aが放物線上にあることと、PがAQの中点になることを検算する。</p></div></details>
+<p class="callout good"><strong>解答：</strong>P(2√2,8)、Q(4＋4√2,0)。<br>同じ高さの三角形で底辺APとPQが等しいため、面積の条件も満たす。</p>
+<h3>別解の見方・失点ポイント</h3><p>高さの比を相似から1：2と見ても、Pのy座標がAの半分になる。面積を複雑な座標式にする前に、共通の高さを探す。x²＝8の負の解を残さず、中点の式は<strong>座標の和÷2</strong>とする。</p></section>
+<section><h2>実践2｜四角形の面積が、三角形の4倍</h2>
+<p class="label">講義の数値・板書の式に沿って再構成した問題</p>
+<p>y＝x²/4上にA(4,4)、B(−4,4)、P(t,t²/4)を取る。ただしt &gt; 4。Pと同じ高さでy軸上にある点をP′(0,t²/4)、Pの真下のx軸上をQ(t,0)とする。四角形OAP′Bの面積が△AOQの4倍になるとき、tを求めよう。</p>
+<h3>着眼点：2つの面積を、取りやすい底辺で表す</h3><p>四角形はOP′で右と左の三角形に分ける。共通の底辺OP′はt²/4、A・Bからy軸までの距離はともに4。</p>
+<details><summary>面積の式を作る</summary><div><div class="formula">四角形OAP′B<br>＝(t²/4)×4÷2＋(t²/4)×4÷2<br>＝t²<br>△AOQ＝t×4÷2＝2t</div><p>四角形の上側の頂点P′の高さが変わっても、OP′を底辺にした分け方で整理できる。</p></div></details>
+<details><summary>方程式・解答・吟味を見る</summary><div><div class="formula">t²＝4×2t<br>t²−8t＝0<br>t(t−8)＝0<br>t＝0、8</div><p>t &gt; 4より0を除く。0では点が重なり面積も0となり、面積の比を考える図形が成り立たない。<strong>解答：t＝8</strong>。</p></div></details>
+<h3>検算と図の描き直し</h3><p>t＝8ならP(8,16)、P′(0,16)。四角形の面積は64、△AOQは16。64＝4×16で正しい。PはAより高い位置になる。</p>
+<div class="callout warn">概略図でPをAより低く描いたとしても、それを問題の条件にしない。講義でも、計算後に位置関係を見直した。<strong>明示された条件と、自分が描いた図の見た目を区別</strong>しよう。</div></section>
+<section><h2>補足演習｜共通の底辺で、面積を比べる</h2>
+<p class="label">講義の座標の例を使った独自の補足問題</p>
+<p>y＝x²/2上にB(−2,2)、C(2,2)がある。Pも放物線上にあり、△PBCの面積は△OBCの3倍とする。Pの座標をすべて求めよう。</p>
+<h3>着眼点</h3><p>BCは水平で長さ4。△OBCの高さは2なので面積は4。△PBCの面積は12となるから、BCからPまでの高さは6必要。</p>
+<details><summary>途中式と解答を見る</summary><div><div class="formula">4×高さ÷2＝12 → 高さ＝6<br>|Pのy座標−2|＝6<br>Pのy座標＝8 または −4</div><p>y＝x²/2はy ≥ 0なので−4は不適。y＝8を代入するとx²/2＝8、x²＝16よりx＝±4。</p><p><strong>解答：P(−4,8)、(4,8)</strong>。左右2つの点が同じ高さにあり、どちらも面積12となる。</p></div></details>
+<p>高さはPのy座標そのものではなく、底辺BCのある<strong>y＝2からの差</strong>。また、x座標が正という条件はこの補足問題にはないので、±の両方を採用する。</p></section>
+<section><h2>実践3｜二等辺三角形の性質を座標へ</h2>
+<p class="label">講義の二等辺三角形の例をもとに条件を明示した問題</p>
+<p>A(−2,0)、B(8,0)に対して、Pは放物線y＝x²/2上にあり、PA＝PBを満たす。Pの座標を求めよう。</p>
+<h3>着眼点：頂点は底辺の垂直二等分線上</h3><p>PA＝PBなので、Pから底辺ABへ下ろす垂線はABの中点を通る。ABはx軸上にあるため、Pのx座標は中点のx座標に一致する。</p>
+<details><summary>途中式・解答・別解を見る</summary><div><div class="formula">Pのx座標＝(−2＋8)/2＝3<br>Pのy座標＝3²/2＝9/2</div><p><strong>解答：P(3,9/2)</strong>。</p><p>別解：P(x,x²/2)として距離の2乗を比べると、(x＋2)²＋(x²/2)²＝(x−8)²＋(x²/2)²。共通項が消え、20x＝60よりx＝3。図形の性質を使う方が式は短い。</p></div></details>
+<h3>失点ポイントと類題</h3><p>中点は「差÷2」ではなく「両端の座標の和÷2」。ABの長さ10と、中点のx座標3を混同しない。</p>
+<details><summary>類題：A(−4,0)、B(6,0)、Pはy＝2x²上、PA＝PBなら？</summary><p>中点のx座標は(−4＋6)/2＝1。y＝2×1²＝2なので、<strong>P(1,2)</strong>。</p></details>
+</section>

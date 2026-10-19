@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-10",
+  "status": "reviewed",
+  "themes": {
+    "japanese": "論説文の事実・意見と要旨",
+    "english": "不定詞・動名詞・使役動詞",
+    "social": "地形図・気温・雨温図と漁場",
+    "math": "二次関数・座標と面積",
+    "science": "水圧・浮力・力の合成と運動"
+  },
+  "review": {
+    "privacy": true,
+    "content": true,
+    "math_variants_distinct": true,
+    "basis": "2026年10月10日の講義動画を、ローカル音声認識と板書の照合で確認して整理。元の文章・図・問題文そのものの転載ではありません。確認できた条件で再構成した問題と、独自の補足例を区別しています。",
+    "sha256": {
+      "science.html": "4c0b9ed02ae839de7f30e57fccd878339afddc20576aa28a0c5d3f0ffd865c4d",
+      "math-practice.html": "33db1bc8cb4813599fb96f655321922f98a55d16292712c08225e7f533f4fd26",
+      "english.html": "9b655b99f3c0e9d116b59e8d4faeb5ae9abb0d9dc81636aa676d7dff42fd230a",
+      "math-summary.html": "60fc5a976de33ea99a343d4406006e05d1aceb2abcd1e65d598312904fb50227",
+      "social.html": "d2b03b2e5af6e03da8c63611d772c726cd3e48c612c6a404f4a58aa22668e5c5",
+      "japanese.html": "6d7a69140fbbb2e14fe4e7a5c4c96e217310870fdf31e2e9e8721d40b7f26576"
+    }
+  },
+  "print_basis": "2026年10月10日の講義動画を確認して作成した復習ノート。要点・解法と、明示した補足問題を収録しています。",
+  "source_note": "元動画・講師映像・個人情報は掲載していません。再構成問題は条件を本文に明示し、元の問題用紙とは区別しています。"
+}
