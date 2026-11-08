@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-07",
+  "status": "reviewed",
+  "themes": {
+    "japanese": "論説文の対比・言い換え・主張の記述",
+    "english": "現在完了と過去形・今とのつながり",
+    "social": "刑事・民事裁判と人権・三審制",
+    "math": "相似と面積比・平行線と合同",
+    "science": "エネルギーの変換・浮力・電磁誘導"
+  },
+  "review": {
+    "privacy": true,
+    "content": true,
+    "math_variants_distinct": true,
+    "basis": "2026年11月7日の講義動画の音声と板書・スライドを照合して作成。国語00:01〜00:37、英語00:43〜01:19、社会01:28〜02:10、数学02:15〜02:55、理科03:06〜03:43ごろ。数学は確認できた条件を明記し、図を描き直した再構成問題。講義で未解説の④は解説済みとして扱わず、類題は独自補足と明示。社会は公的資料で制度を照合し、講義の例えと正確な条件を区別。",
+    "sha256": {
+      "japanese.html": "bc7cc4d7738c1c7b1124906de7cb0cfc5edfa471b6f2a8f12da1e037e82bc626",
+      "english.html": "13ebd53e5cbffff59f5e82f44e2334042174140e357db8ac494dddf34eb1d0ea",
+      "social.html": "5abebfc2a3ab3bb44e45b974355108bd2fb20546eea08406b10fe5d99afd837b",
+      "math-summary.html": "352854c4e220aba1e3323e2990ff40775538899a385966f6d5827c3cbea08002",
+      "math-practice.html": "5ae4a8ff34dc41094e34935f7e3c85142e5e0ec6eda5999f73f3d7f567b2407e",
+      "science.html": "bbbf8be9fa39cd9e01a4aa80b6b0827d37068b4686fde1bb1f1897dd36edc2dc"
+    }
+  },
+  "print_basis": "2026年11月7日の講義動画を確認した復習ガイド。講義内容の整理、条件を明記した数学の再構成問題、明示した補足・類題を収録。",
+  "source_note": "元動画・講師映像・個人情報は掲載していません。音声認識の誤りは、確認できる板書と照合して補正しています。これは公式の解答冊子ではありません。"
+}

@@ -16,7 +16,7 @@ const {chromium}=require('playwright');
    await page.goto(pathToFileURL(path.join(root,'index.html')).href);
    assert.equal(await page.locator('[data-session]').count(),sessions.length);
    await page.locator('[data-search]').fill('面積比');
-   assert.equal(await page.locator('[data-session]:visible').count(),1);
+   assert.equal(await page.locator('[data-session]:visible').count(),sessions.filter(s=>Object.values(s.themes).some(t=>t.includes('面積比'))).length);
    await page.locator('[data-search]').fill('該当しない語句12345');
    assert.equal(await page.locator('[data-no-results]').isVisible(),true);
    await page.locator('[data-search]').fill('');
